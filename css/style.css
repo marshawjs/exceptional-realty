@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Clicker+Script); 
 /* @import allows you to import other css code - must be at the top */
 
-/* this is a comment! */
+/* ///////// GLOBAL ///////*/
 
 /* CSS Syntax: 
 
@@ -15,6 +15,9 @@ selector {
 
 /* type selector (applied to one one type of element */
 
+h3 {
+	margin 0 0 10px;
+}
 p { /* select all <p> */ 
 	font-size: 1em;  
 	line-height: 1.5em; 
@@ -37,6 +40,15 @@ figcaption {
 	font: bold 2.6em 'Elsie Swash Caps', cursive; 
 	color: white; 
 	text-shadow: 0 2px 3px #000;
+}
+
+.shadow { 
+box-shadow: 0 3px 10px #333;
+}
+
+.border-right {
+	border-right: 1px dotted #ccc; 
+	padding-right: 30px; 
 }
 
 /* ID selector (apply to one unique element per page) */
@@ -69,7 +81,7 @@ figcaption {
 #details a:active {
 	color:red;
 }
-
+/* ////// BACKGROUNDS //////// */
 
 /* //////// MEDIA ////////*/
 
@@ -93,17 +105,16 @@ img, video, audio {
 .col-1 {
 	float: left;
 	width: 32%;
-	background: #ccc;
+	
 }
 
 .col-2 { 
 	float: left;
 	width: 66%;
-	background: #ccc;
+	
 }
 
 .col-3 {
-	background: #ccc; 
 	width: 100%;
 }
 .clearfix:after {
@@ -158,12 +169,60 @@ padding: 20px;
 	background: yellow; 
 }
 
+/* //////// HEADER ////////*/
+
+header { 
+	margin: 0 0 30px; 
+}
+
+/* //////// NAVBAR ////////*/
+
+#navbar {
+	position: fixed; 
+	top: 0; 
+	left: 0;
+	width: 100px; 
+	z-index: 2;
+	border-bottom: 1px solid #ccc;
+	text-align: center; 
+}
+
+#navbar nav {
+	border-left: 1px solid #ccc;
+
+}
+
+#navbar nav a {
+	display: inline-block;
+	width: 16.6667%; 
+	margin: 0;
+	padding: 22px 0;
+	text-transform: uppercase;
+	color: black; 
+	text-align: center;
+	border-right: 1 px solid #ccc; 
+	text-decoration: none; 
+	font: 1em "Trebuchet MS", Arial, sans-serif;
+}
+
+
+#navbar nav a.selected {
+	backgorund: #333;
+}
+
+/* //////// LOGO ////////*/
+
+#logo h1 { 
+font-family: 'Clicker Script', cursive; 
+}
+
+#logo h2 {
+	font-family: 'Elsie Swash Caps', cursive; 
+}
 
 
 
-
-
-
+/* //////// FOOTER ////////*/
 
 
 
